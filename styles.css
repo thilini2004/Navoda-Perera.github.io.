@@ -8,7 +8,7 @@ body {
 }
 
 /* Page Colors */
-.index { background: linear-gradient(to right, #ff758c, #ff7eb3, #ff91a4); } /* Home */
+.index { background: linear-gradient(to right, #4b006e, #d42f8a, #ff77a9); } /* Home */
 .about { background: linear-gradient(to right, #ff7eb3, #b48eff); } /* About */
 .projects { background: linear-gradient(to right, #ff91a4, #b48eff); } /* Projects */
 .articles { background: linear-gradient(to right, #b48eff, #6a5acd); } /* Articles */
