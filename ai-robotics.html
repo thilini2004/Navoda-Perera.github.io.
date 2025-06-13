@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>AI Robotics Projects</title>
-  
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #eaf6ff; /* Light blue background */
       margin: 0;
       padding: 20px;
     }
 
     h1 {
       text-align: center;
-      color: #333;
+      color: #003366; /* Deep blue title */
+      font-size: 36px;
+      margin-bottom: 40px;
     }
 
     .project-card {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px auto;
+      background-color: #ffffff;
+      border: 1px solid #cce5ff;
+      border-radius: 16px;
+      padding: 25px;
+      margin: 0 auto 30px auto;
       width: 90%;
-      max-width: 600px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      max-width: 700px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
       text-align: center;
     }
 
@@ -33,22 +34,37 @@
       width: 100%;
       max-height: 300px;
       object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
+      border-radius: 12px;
+      margin-bottom: 20px;
     }
 
     .project-card h2 {
-      margin-top: 0;
+      color: #0056b3;
+      font-size: 28px;
+      margin: 10px 0;
     }
 
-    .project-card a {
-      color: #007bff;
+    .project-card p {
+      text-align: justify;
+      color: #333333;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .download-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(to right, #007bff, #0056b3);
+      color: white;
       text-decoration: none;
+      border-radius: 8px;
       font-weight: bold;
+      margin-top: 25px;
+      transition: background 0.3s ease;
     }
 
-    .project-card a:hover {
-      text-decoration: underline;
+    .download-button:hover {
+      background: linear-gradient(to right, #0056b3, #003d80);
     }
   </style>
 </head>
@@ -56,15 +72,27 @@
 
   <h1>AI Robotics Projects</h1>
 
-  <!-- Line Follower Robot Project Card -->
   <div class="project-card">
     <img src="images/line-follower.jpg" alt="Line Follower Robot">
     <h2>Line Follower Robot</h2>
-    <p>This robot follows a black line using IR sensors and Arduino code. It uses basic automation logic and real-time motor control.</p>
-    <a href="https://github.com/thilini2004/line-follower" target="_blank">View on GitHub</a>
-  </div>
+    <p>
+      This project demonstrates a Line Follower Robot built using an Arduino Uno, IR sensors, and DC motors. 
+      The robot follows a black line on a white surface using simple logic-based control. When the IR sensors detect the line,
+      the microcontroller directs the motors to adjust movement and follow the path accurately.
+    </p>
+    <p>
+      Real-life applications include warehouse automation, production line systems, and smart delivery robots. 
+      The robot is a great example of embedded systems, robotics control, and hardware-software integration.
+    </p>
+    <p>
+      Future improvements can include using PID control for smoother curves, ultrasonic sensors for obstacle detection, 
+      and AI-based decision-making to adapt to different routes or environments.
+    </p>
 
-  <!-- Additional projects will go here -->
+    <a href="line-follower-report.pdf" target="_blank" class="download-button">
+      📄 View Full Project Report (PDF)
+    </a>
+  </div>
 
 </body>
 </html>
